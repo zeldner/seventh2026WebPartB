@@ -1,0 +1,12 @@
+# Create React + TypeScript template
+npm create vite@latest lesson-ts-dashboard -- --template react-ts
+cd lesson-ts-dashboard
+npm install
+
+# Install Tailwind CSS v4
+npm install tailwindcss @tailwindcss/vite
+
+The Rule
+.ts (TypeScript): Logic only. Classes, Functions, Interfaces, Types. No HTML/JSX allowed.
+
+.tsx (TypeScript XML): Logic + UI. This file is allowed to contain JSX tags (like <div>, <App />).
