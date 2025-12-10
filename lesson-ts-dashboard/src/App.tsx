@@ -6,6 +6,7 @@ import { useState } from "react";
 import type { Student } from "./types";
 import StudentItem from "./components/StudentItem";
 
+// No props needed here, so no generics in the function signature.
 function App() {
   // STATE & GENERICS
   // useState<Student[]>
