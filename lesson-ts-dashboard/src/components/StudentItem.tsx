@@ -9,14 +9,15 @@ import type { Student } from "../types";
 type StudentItemProps = {
   student: Student;
   onToggle: (id: number) => void; // A function that takes a number and returns nothing
-  onDelete: (id: number) => void;
+  onDelete: (id: number) => void; // A function that takes a number and returns nothing
 };
 
 export default function StudentItem({
-  student,
-  onToggle,
-  onDelete,
-}: StudentItemProps) {
+  student, // destructuring props
+  onToggle, // function to toggle status
+  onDelete, // function to delete student
+}: StudentItemProps) // We specify the type of props using the defined type
+{
   return (
     <div className="flex items-center justify-between bg-white p-4 mb-2 rounded shadow-sm border border-gray-200">
       <div>

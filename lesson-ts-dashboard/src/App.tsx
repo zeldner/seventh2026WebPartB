@@ -51,7 +51,6 @@ function App() {
       name: inputValue,
       status: "Present", // if we  changing this to "Late" -> TS will crash!
     };
-
     setStudents([...students, newStudent]);
     setInputValue("");
   };
